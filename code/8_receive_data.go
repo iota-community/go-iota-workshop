@@ -20,12 +20,12 @@ var address = trinary.Trytes("XBN9ZRCOH9YRUGSWIQNZWAIFEZUBDUGTFPVRKXWPAUCEQQFS9N
 var query = FindTransactionsQuery{Addresses: trinary.Hashes{address}}
 
 func main() {
-	api, err := ComposeAPI(HTTPClientSettings{URI: endpoint})
-	must(err)
+    api, err := ComposeAPI(HTTPClientSettings{URI: endpoint})
+    must(err)
     
     // Find Transaction Objects uses the connected node to find transactions based on our query
     transactions, err := api.FindTransactionObjects(query)
-	must(err)
+    must(err)
     
     // We need to sort all transactions by index first so we can concatenate them
     sort.Slice(transactions[:], func(i, j int) bool {
@@ -50,9 +50,9 @@ func main() {
 }
 
 func must(err error) {
-	if err != nil {
-		panic(err)
-	}
+    if err != nil {
+        panic(err)
+    }
 }
 
 func removeSuffixNine(frag string) string {

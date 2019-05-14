@@ -11,18 +11,18 @@ import (
 var endpoint = "https://nodes.devnet.thetangle.org"
 
 // The address we want to fetch all transactions for
-var address = trinary.Trytes("JBN9ZRCOH9YRUGSWIQNZWAIFEZUBDUGTFPVRKXWPAUCEQQFS9NHPQLXCKZKRHVCCUZNF9CZZWKXRZVCWQMZOCAHYPD")
+var address = trinary.Trytes("ZBN9ZRCOH9YRUGSWIQNZWAIFEZUBDUGTFPVRKXWPAUCEQQFS9NHPQLXCKZKRHVCCUZNF9CZZWKXRZVCWQMZOCAHYPD")
 
 // We need a query object containing the address we want to look for
 var query = FindTransactionsQuery{Addresses: trinary.Hashes{address}}
 
 func main() {
-	api, err := ComposeAPI(HTTPClientSettings{URI: endpoint})
-	must(err)
+    api, err := ComposeAPI(HTTPClientSettings{URI: endpoint})
+    must(err)
     
     // Find Transaction Objects uses the connected node to find transactions based on our query
     transactions, err := api.FindTransactionObjects(query)
-	must(err)
+    must(err)
     
     for _, tx := range transactions {
         // To get our message back we need to convert the signatureMessageFragment to ASCII
@@ -35,9 +35,9 @@ func main() {
 }
 
 func must(err error) {
-	if err != nil {
-		panic(err)
-	}
+    if err != nil {
+        panic(err)
+    }
 }
 
 func removeSuffixNine(frag string) string {
