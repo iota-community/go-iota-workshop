@@ -17,6 +17,7 @@ go run code/1_helloworld.go
 ```
 
 You should receive a message including the statistics of an IOTA node. This means you can explore and run the other examples.
+It is highly recommended to change the seeds and addresses used in these examples to make sure you start with a clean slate.
 
 
 ### Examples included
