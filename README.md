@@ -32,11 +32,11 @@ Here are the examples included:
  - `6_send_value.go`
  - `7_send_data.go`
  - `8_receive_data.go`
+ - `9_zmq.go`
 
 
 ### Work to be done:
 
- - Add ZMQ example
  - Add MAM examples
  - Add more complex application examples
  - Refactor by someone with more Go experience :)
