@@ -13,7 +13,7 @@ To start playing with these examples run the following commands:
 git clone https://github.com/iota-community/go-iota-workshop.git
 cd go-iota-workshop
 go mod download
-go run code/1_helloworld.go
+go run iota_go_helloworld/main.go
 ```
 
 You should receive a message including the statistics of an IOTA node. This means you can explore and run the other examples.
