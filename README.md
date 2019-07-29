@@ -13,7 +13,7 @@ To start playing with these examples run the following commands:
 git clone https://github.com/iota-community/go-iota-workshop.git
 cd go-iota-workshop
 go mod download
-go run code/1_helloworld.go
+go run iota_go_helloworld/main.go
 ```
 
 You should receive a message including the statistics of an IOTA node. This means you can explore and run the other examples.
@@ -24,15 +24,15 @@ It is highly recommended to change the seeds and addresses used in these example
 
 Here are the examples included:
 
- - `1_helloworld.go`
- - `2_send_tx.go`
- - `3_receive_tx.go`
- - `4_create_address.go`
- - `5_check_balance.go`
- - `6_send_value.go`
- - `7_send_data.go`
- - `8_receive_data.go`
- - `9_zmq.go`
+ - 1: `iota_go_helloworld`
+ - 2: `iota_go_send_tx`
+ - 3: `iota_go_receive_tx`
+ - 4: `iota_go_create_address`
+ - 5: `iota_go_check_balance`
+ - 6: `iota_go_send_value`
+ - 7: `iota_go_send_data`
+ - 8: `iota_go_receive_data`
+ - 9: `iota_go_zmq`
 
 
 ### Work to be done:
